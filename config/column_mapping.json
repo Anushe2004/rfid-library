@@ -1,0 +1,12 @@
+{
+  "required": ["accession_no", "title"],
+  "columns": {
+    "accession_no": ["accession_no", "accession no", "acc_no", "accession number"],
+    "barcode":      ["barcode", "bar code"],
+    "isbn":         ["isbn", "isbn13", "isbn-13"],
+    "title":        ["title", "book title"],
+    "author":       ["author", "authors"],
+    "publisher":    ["publisher"],
+    "pub_year":     ["pub_year", "year", "publication year", "year of publication"]
+  }
+}

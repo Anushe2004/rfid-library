@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+data/*.db
+data/backups/*
+data/reports/*
+data/synthetic/
+config/local.ini
+*.log
+!data/backups/.gitkeep
+!data/reports/.gitkeep

@@ -1,0 +1,13 @@
+[project]
+name = "rfidlib"
+version = "0.1.0"
+description = "RFID-enabled library solution: migration utility and service skeleton (synthetic data only)"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests", "scripts"]
