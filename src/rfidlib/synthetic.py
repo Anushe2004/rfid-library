@@ -35,7 +35,8 @@ def _isbn13(rng):
 
 
 def generate(n=20000, invalid=150, duplicates=100, seed=42):
-    rng = random.Random(seed)
+    # Seeded RNG for reproducible synthetic test data; not used for anything security related.
+    rng = random.Random(seed)  # nosec B311
     idx = list(range(10, n))  # keep first rows clean so dupes have sources
     bad = set(rng.sample(idx, invalid))
     dup = set(rng.sample([i for i in idx if i not in bad], duplicates))
